@@ -16,7 +16,7 @@ test('Amazon login page automation', async ({ page }) => {
   // Fill in password
   await page.waitForSelector('input[name="password"]', { state: 'visible' });
   await page.fill('input[name="password"]', 'EVdemo2024');
-  await page.click('span:has-text("Sign In")');
+  await page.click('span:has-text("Sign In ")');
 
   // Optionally, check for successful login (e.g., presence of account name)
   // await expect(page.locator('span.nav-line-1')).toContainText('Hello, YourName');
